@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="`style.css">
+    <title>Automatic slideshow</title>
+</head>
+
+
+<body>
+    <div class="content">
+        <div class="images">
+            <img src = "pic1.png">
+            <img src = "pic2.png">
+            <img src = "pic3.png">
+            <img src = "pic4.png">
+            <img src = "pic5.png">
+        </div>
+    </div>
+    
+<script>
+    var indexValue = 0;
+    function slideShow() {
+    setTimeout(slideShow, 1100);
+        const img = document.querySelectorAll('img');
+        for (x=0; x<img.length; x++) {
+            img[x].style.display = "none"; //'removes' all elements
+        }
+        indexValue++
+        if (indexValue > img.length) {indexValue = 1} //restart if arr iterated.
+        img[indexValue - 1].style.display = "block"; //display only 1 element
+    }
+    slideShow()
+        </script>
+
+</body>
+</html>
