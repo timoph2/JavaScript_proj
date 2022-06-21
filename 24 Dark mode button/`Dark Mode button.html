@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Dark mode button </title>
+      <link rel="stylesheet" href="`style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+   </head>
+   <body>
+      <nav><h1>Animated Dark Mode button switch</h1>
+         <div class="button">
+            <div class="center">
+               <input type="checkbox">
+            </div>
+         </div>
+
+      <h2> Title1 here </h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque debitis tenetur beatae exercitationem sit impedit sint atque quae magnam deserunt sed voluptates dolores architecto praesentium in facere dolorem, illo labore?</p>
+      <h2> Title2 here </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, suscipit quasi?</p>
+   </nav>
+
+   
+   <script>
+      $(document).ready(function(){
+         $('input').click(function(){
+            $('body').toggleClass('active');
+            $('.button').toggleClass('check');
+         });
+      });
+
+   </script>
+   
+   </body>
+</html>
